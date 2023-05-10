@@ -1,62 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap');
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+:root {
+  font-size: 1.75rem;
   font-family: 'Patrick Hand SC', sans-serif;
-  font-size: 27px;
   color: white;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-  cursor: pointer;
+* {
+  box-sizing: border-box;
+  margin: unset;
+  padding: unset;
 }
 
-.container {
+.wrapper {
   display: grid;
-  grid-template-columns: minmax(180px, 1fr) 4fr;
-  grid-template-rows: 64px minmax(100vh, auto) 58px;
+  grid-template-columns: minmax(200px, 1fr) 4fr;
+  grid-template-rows: 10vh minmax(200vh, auto) 10vh;
   grid-template-areas:
     'header header'
     'sidebar main'
-    'footer footer';
-}
-
-.sobre {
-  justify-self: end;
-  margin-right: 10px;
-}
-
-.fundo_botao {
-  margin-top: 2vh;
-  margin-bottom: 2vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 30px;
-  width: 80%;
-  background: #c26c37;
-  border-radius: 14px;
-}
-
-.raposa_mes {
-  margin-top: 2vh;
-  margin-bottom: 2vh;
-  width: 80%;
-  height: auto;
-  border-radius: 14px;
+    'sidebar footer';
 }
 
 header {
   background-color: #f58845;
   grid-area: header;
   display: grid;
-  grid-template-columns: minmax(180px, 1fr) 4fr;
-  align-items: center;
-  justify-items: center;
+  grid-template-columns: minmax(200px, 1fr) 4fr;
+  place-items: center;
+  position: sticky;
+  top: 0;
+}
+
+.sobre {
+  justify-self: end;
+  margin-right: 0.5rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
 main {
@@ -68,88 +51,40 @@ aside {
   grid-area: sidebar;
   background-color: #f7b78f;
   display: flex;
+  align-items: start;
   justify-content: center;
-  align-content: flex-start;
-  flex-wrap: wrap;
 }
 
-footer {
-  grid-area: footer;
-  background-color: #f58845;
-}
-@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap');
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: 'Patrick Hand SC', sans-serif;
-  font-size: 27px;
-  color: white;
+nav {
+  position: sticky;
+  top: 10vh;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.container {
-  display: grid;
-  grid-template-columns: minmax(180px, 1fr) 4fr;
-  grid-template-rows: 64px minmax(100vh, auto) 58px;
-  grid-template-areas:
-    'header header'
-    'sidebar main'
-    'footer footer';
-}
-
-.sobre {
-  justify-self: end;
-  margin-right: 10px;
-}
-
-.fundo_botao {
-  margin-top: 2vh;
-  margin-bottom: 2vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 30px;
-  width: 80%;
+.botao {
+  margin-top: 0.5rem;
+  text-align: center;
   background: #c26c37;
-  border-radius: 14px;
+  border-radius: 0.5rem;
+  position: relative;
+}
+
+.botao:not(:first-child)::before {
+  content: ">";
+  position: absolute;
+  transition: rotate 200ms;
+  left: 10px;
+}
+
+.botao:hover::before {
+  rotate: 90deg;
 }
 
 .raposa_mes {
-  margin-top: 2vh;
-  margin-bottom: 2vh;
-  width: 80%;
-  height: auto;
-  border-radius: 14px;
+  margin-top: 0.5rem;
 }
 
-header {
-  background-color: #f58845;
-  grid-area: header;
-  display: grid;
-  grid-template-columns: minmax(180px, 1fr) 4fr;
-  align-items: center;
-  justify-items: center;
-}
-
-main {
-  grid-area: main;
-  background-color: #fce7d4;
-}
-
-aside {
-  grid-area: sidebar;
-  background-color: #f7b78f;
-  display: flex;
-  justify-content: center;
-  align-content: flex-start;
-  flex-wrap: wrap;
+img {
+  display: block;
 }
 
 footer {
