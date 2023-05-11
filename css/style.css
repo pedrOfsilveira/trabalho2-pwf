@@ -69,17 +69,6 @@ nav {
   position: relative;
 }
 
-.botao:not(:first-child)::before {
-  content: ">";
-  position: absolute;
-  transition: rotate 200ms;
-  left: 10px;
-}
-
-.botao:hover::before {
-  rotate: 90deg;
-}
-
 .raposa_mes {
   margin-top: 0.7rem;
   width: 100%;
@@ -92,4 +81,63 @@ img {
 footer {
   grid-area: footer;
   background-color: #f58845;
+}
+
+/* botões */
+
+input[type='checkbox'] {
+  display: none;
+}
+
+.menu_botao {
+  margin-top: 0.5rem;
+  user-select: none;
+}
+
+.lbl-botao {
+  display: block;
+  text-align: center;
+  background: #c26c37;
+  cursor: pointer;
+  border-radius: 0.7rem;
+  transition: all .2s ease-out;
+}
+
+.lbl-botao::before {
+  content: ">";
+  position: absolute;
+  left: 10px;
+  vertical-align: middle;
+  margin-right: .7rem;
+  transition: transform .2s ease-in-out;
+}
+
+.botao:checked+.lbl-botao::before {
+  transform: rotate(90deg);
+}
+
+.fundo_botao {
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height .1s ease-in;
+}
+
+.botao:checked+.lbl-botao+.fundo_botao {
+  max-height: 350px;
+}
+
+.botao:checked+.lbl-botao {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.fundo_botao .conteudo_interior {
+  background: #c26c37;
+  border-bottom-left-radius: 0.7rem;
+  border-bottom-right-radius: 0.7rem;
+  padding: .5rem 1rem;
+}
+
+.conteudo-interior p {
+  margin-bottom: 0;
 }
