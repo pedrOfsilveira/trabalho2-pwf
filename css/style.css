@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap');
 
 :root {
-  font-size: 1.75rem;
+  font-size: 1.65rem;
   font-family: 'Patrick Hand SC', sans-serif;
   color: white;
 }
@@ -15,7 +15,7 @@
 .wrapper {
   display: grid;
   grid-template-columns: minmax(200px, 1fr) 4fr;
-  grid-template-rows: 10vh minmax(200vh, auto) 10vh;
+  grid-template-rows: 10vh minmax(80vh, auto) 10vh;
   grid-template-areas:
     'header header'
     'sidebar main'
@@ -64,7 +64,7 @@ nav {
   margin-top: 0.5rem;
   text-align: center;
   background: #c26c37;
-  border-radius: 0.5rem;
+  border-radius: 0.7rem;
   position: relative;
 }
 
@@ -80,7 +80,7 @@ nav {
 }
 
 .raposa_mes {
-  margin-top: 0.5rem;
+  margin-top: 0.7rem;
 }
 
 img {
