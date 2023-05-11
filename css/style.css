@@ -58,6 +58,7 @@ aside {
 nav {
   position: sticky;
   top: 10vh;
+  width: 80%;
 }
 
 .botao {
@@ -81,6 +82,7 @@ nav {
 
 .raposa_mes {
   margin-top: 0.7rem;
+  width: 100%;
 }
 
 img {
