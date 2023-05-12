@@ -167,3 +167,25 @@ input[type='checkbox'] {
 
   }
 }
+.footer_esquerdo{
+  margin-left: 100px;
+  margin-top: 25px;
+  float: left;
+}
+.footer_centro{
+  color: white;
+  font-family: 'Patrick Hand SC', sans-serif;
+  text-align: center;
+  font-size: 13px;
+  margin-top: 28px;
+  margin-right: 500px;
+}
+.footer_direito{
+  float:right;
+  margin-right: 40px;
+}
+.icons{
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
+}
