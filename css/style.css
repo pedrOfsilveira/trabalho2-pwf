@@ -22,6 +22,8 @@
     'sidebar footer';
 }
 
+
+
 header {
   background-color: #f58845;
   grid-area: header;
@@ -30,6 +32,7 @@ header {
   place-items: center;
   position: sticky;
   top: 0;
+  z-index: 2;
 }
 
 .sobre {
@@ -61,14 +64,6 @@ nav {
   width: 80%;
 }
 
-.botao {
-  margin-top: 0.5rem;
-  text-align: center;
-  background: #c26c37;
-  border-radius: 0.7rem;
-  position: relative;
-}
-
 .raposa_mes {
   margin-top: 0.7rem;
   width: 100%;
@@ -76,6 +71,7 @@ nav {
 
 img {
   display: block;
+  cursor: pointer;
 }
 
 footer {
@@ -84,6 +80,16 @@ footer {
 }
 
 /* botões */
+
+.botao {
+  margin-top: 0.5rem;
+  text-align: center;
+  background: #c26c37;
+  border-radius: 0.7rem;
+  position: relative;
+  user-select: none;
+  cursor: pointer;
+}
 
 input[type='checkbox'] {
   display: none;
@@ -140,4 +146,24 @@ input[type='checkbox'] {
 
 .conteudo-interior p {
   margin-bottom: 0;
+}
+
+@media (max-width: 600px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: 10vh 13rem minmax(80vh, auto) 10vh;
+    grid-template-areas:
+      'header'
+      'sidebar'
+      'main'
+      'footer';
+  }
+  .nav {
+    position: static;
+    height: 100%;
+  }
+  .raposa_mes {
+    display: none;
+
+  }
 }
