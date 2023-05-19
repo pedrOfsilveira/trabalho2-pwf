@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="css/style.css" rel="stylesheet">
-  <title>Página Inicial</title>
+  <title>Wikiposa</title>
 </head>
 
 <body>
@@ -21,11 +21,11 @@
     </header>
     <aside>
       <nav>
-        <div class="botao">
+        <div class="botao" id="botao_raposa">
           <p>Raposa do Mês</p>
         </div>
         <img class="raposa_mes" alt="imagem da raposa do mês" src="img/feneco_raposadomes.png">
-        <div class="menu_botao">
+        <div class="menu_botao" id="botao_especie">
           <input id="especies" class="botao" type="checkbox">
           <label for="especies" class="lbl-botao">espécies </label>
           <div class="fundo_botao">
@@ -34,7 +34,7 @@
             </div>
           </div>
         </div>
-        <div class="menu_botao">
+        <div class="menu_botao" id="botao_artigo">
           <input id="artigos" class="botao" type="checkbox">
           <label for="artigos" class="lbl-botao">artigos </label>
           <div class="fundo_botao">
@@ -43,14 +43,11 @@
             </div>
           </div>
         </div>
-        <div class="botao">
+        <div class="botao" id="botao_faq">
           <p>faq</p>
         </div>
-        <div class="botao">
+        <div class="botao" id="botao_galeria">
           <p>galeria</p>
-        </div>
-        <div class="botao">
-          <p>me surpreenda</p>
         </div>
       </nav>
     </aside>
@@ -59,7 +56,7 @@
         <img class="fenecos_main" alt="três" src="img/fenecos.jpg">
         <h1>o gênero vulpes</h1>
         <div class="thumb_r">
-          <img alt="foto minha de agora" src="img/gatochique.png" width="200px">
+          <img class= "thumb" alt="foto minha de agora" src="img/gatochique.png">
         </div>
         <p>O gênero Vulpes é composto por mamíferos onívoros da família Canidae, conhecidos como "raposas verdadeiras".
           Esses animais são menores que os membros do gênero Canis e têm crânios mais achatados. As raposas verdadeiras
@@ -87,18 +84,18 @@
       </div>
     </main>
     <footer>
-      <div class="footer_esquerdo">
-        <img src="img/logo.png" alt="logo rodapé" width="80" height="20">
-      </div>
       <div class="footer_centro">
+        <div class="rodalogo">
+        <img src="img/logo.png" alt="logo rodapé" width="80" height="20"> <br>
+        </div>
+      <div class="textoroda">
         ©WIKIPOSA
       </div>
-      <div class="footer_direito">
         <div class="icons">
-          <img class="icons" src="img/twitter.png" alt="twitter" width="30" height="20">
-          <img class="icons" src="img/youtube.png" alt="twitter" width="30" height="20">
-          <img class="icons" src="img/instagram.png" alt="twitter" width="30" height="20">
-          <img class="icons" src="img/facebook.png" alt="twitter" width="30" height="20">
+          <img class="icones" src="img/twitter.png" alt="twitter" width="30" height="20">
+          <img class="icones" src="img/youtube.png" alt="youtube" width="30" height="20">
+          <img class="icones" src="img/instagram.png" alt="insta" width="30" height="20">
+          <img class="icones" src="img/facebook.png" alt="face" width="30" height="20">
         </div>
       </div>
     </footer>
