@@ -111,11 +111,15 @@ footer {
   float: right;
   background-color:#f7b78f;
   padding: 10px;
+  min-width: 100px;
+  min-height: 100px;
+  width: 25%;
+  height: auto;
 }
 
 .thumb{
-  width: 400px;
-  height: auto;
+  width: 100%;
+  height: 100%;
 }
 
 /* botões */
@@ -195,7 +199,6 @@ input[type='checkbox'] {
   flex-direction: column;
   align-items: center;
   width: auto;
-  justify-content:end;
 }
 
 .icons {
@@ -216,40 +219,57 @@ input[type='checkbox'] {
   nav {
     display: grid;
     width: 100%;
+    height: 100%;
     margin: 0;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: 
       'raposa-mes especie artigo faq galeria';
   }
-
+  
+  nav .botao {
+    margin: 0;
+    border-radius: 0;
+    height: 2.6rem;
+  }
   #botao_raposa {
     grid-area: raposa-mes;
-    width: 100%;
   }
   #botao_especie {
     grid-area: especie;
-    width: 100%;
   }
   #botao_artigo {
     grid-area: artigo;
-    width: 100%;
   }
   #botao_faq {
     grid-area: faq;
-    width: 100%;
   }
   #botao_galeria {
     grid-area: galeria;
-    width: 100%;
+  }
+  .lbl-botao {
+    border-radius: 0;
+    margin: 0;
+  }
+
+  .menu_botao {
+    margin: 0;  
   }
 
   .lbl-botao::before {
     content: ">";
     position: relative;
   }  
+
+  .conteudo_interior {
+    border-radius: 0;
+  }
   .raposa_mes {
     display: none;
+  }
+
+  aside {
+    background-color: #fce7d4;
   }
 
   .fenecos_main {
