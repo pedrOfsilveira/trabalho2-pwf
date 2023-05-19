@@ -1,0 +1,15 @@
+@import "css/style.css";
+
+tr {
+    text-align: center;
+}
+
+tr:hover {
+    background-color: #f7b78f;
+}
+
+th {
+    background-color: #f7b78f;
+    padding: 2px;
+}
+
