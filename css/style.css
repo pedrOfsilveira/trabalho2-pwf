@@ -11,7 +11,7 @@
   margin: unset;
   padding: unset;
 }
-
+/* eu mudei pro footer ficar bonitinho e a sidebar n tava usando a ultima parte ali, qualquer problema pode voltar como tava :D*/
 .wrapper {
   display: grid;
   grid-template-columns: minmax(200px, 1fr) 4fr;
@@ -19,7 +19,7 @@
   grid-template-areas:
     'header header'
     'sidebar main'
-    'sidebar footer';
+    'footer footer';
 }
 
 header {
@@ -78,10 +78,7 @@ img {
   display: block;
 }
 
-footer {
-  grid-area: footer;
-  background-color: #f58845;
-}
+
 
 /* pagina principal */
 .conteudo {
@@ -187,7 +184,11 @@ input[type='checkbox'] {
 .conteudo-interior p {
   margin-bottom: 0;
 }
-
+footer {
+  grid-area: footer;
+  background-color: #f58845;
+  padding: 1.5vw 0;
+}
 .footer_centro {
   display: flex;
   color: white;
@@ -195,7 +196,27 @@ input[type='checkbox'] {
   font-size: 13px;
   flex-direction: column;
   align-items: center;
-  width: auto;
+  width:auto;
+  background-color:#f58845 ;
+}
+.rodalogo{
+width: 8vw;
+}
+.textoroda{
+  margin: 0.5vw 0;
+  font-size: 0.65rem;
+  display: flex;
+
+}
+.copy{
+  margin: 0.5vw 0;
+}
+.textoroda a:not(:last-child){
+margin-left: 0.5vw;
+}
+
+.icones{
+  width: 2vw;
 }
 
 .icons {
