@@ -1,0 +1,56 @@
+@import "style.css";
+
+/* card */
+.card {
+    border: 3px solid #f7b78f;
+    border-radius: 5px;
+    margin: 0 0 12px 12px;
+    padding: 5px;
+    min-width: 200px;
+    width: 30%;
+    height: auto;
+    float: right;
+}
+
+.card img {
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+}
+
+table {
+    user-select: none;
+    width: 100%;
+    height: auto;
+    border-collapse: collapse;
+}
+
+tr:hover {
+    background-color: #F7CEB5;
+}
+
+th {
+    background-color: #f7b78f;
+    padding: 2px;
+    text-align: center;
+}
+
+td {
+    border-top: 0.5px solid #f7b78f;
+    padding-left: 2px;
+}
+
+/* texto */
+.conteudo {
+    margin: 10px 70px 50px 70px;
+}
+
+/*card 600px*/
+@media (max-width: 600px) {
+    .card {
+        margin: 0 0 20px 0;
+        width: 100%;
+    }
+
+}
