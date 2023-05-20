@@ -41,16 +41,10 @@ td {
     padding-left: 2px;
 }
 
-/* texto */
-.conteudo {
-    margin: 10px 70px 50px 70px;
-}
-
 /*card 600px*/
 @media (max-width: 600px) {
     .card {
         margin: 0 0 20px 0;
         width: 100%;
     }
-
 }
