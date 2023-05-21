@@ -213,6 +213,7 @@ footer {
 }
 .rodalogo{
 width: 8vw;
+min-width: 80px;
 }
 .textoroda{
   margin: 0.5vw 0;
@@ -231,6 +232,7 @@ margin-left: 0.5vw;
 .icones {
   width: 2vw;
   margin-left: 0.2vw;
+  min-width: 20px;
 }
 
 
@@ -334,15 +336,5 @@ margin-left: 0.5vw;
   .thumb_l {
     margin-right: 6px;
     width: 150px;
-  }
-  .icones {
-    width: 5vw;
-  }
-  .rodalogo{
-    width: 16vw;
-    }
-    .textoroda a:not(:last-child){
-      margin-left: 2vw;
-      }
-      
+  }   
 }
