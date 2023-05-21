@@ -106,8 +106,7 @@ img {
   float: right;
   background-color: #f7b78f;
   padding: 5px;
-  min-width: 100px;
-  min-height: 100px;
+  min-width: 170px;
   width: 25%;
   height: auto;
 }
@@ -117,16 +116,16 @@ img {
   float: left;
   background-color: #f7b78f;
   padding: 5px;
-  min-width: 100px;
-  min-height: 100px;
+  min-width: 170px;
   width: 25%;
   height: auto;
 }
 
 .thumb {
   width: 100%;
-  height: 100%;
+  height: auto;
 }
+
 
 /* botões */
 .botao {
@@ -329,12 +328,12 @@ margin-left: 0.5vw;
   }
 
   .thumb_r {
-    margin-left: 6px;
-    width: 150px;
+    width: 100%;
+    margin-bottom: 10px;
   }
 
   .thumb_l {
-    margin-right: 6px;
-    width: 150px;
+    width: 100%;
+    margin-bottom: 10px;
   }   
 }
