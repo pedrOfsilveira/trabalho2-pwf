@@ -335,6 +335,14 @@ margin-left: 0.5vw;
     margin-right: 6px;
     width: 150px;
   }
-
-  
+  .icones {
+    width: 5vw;
+  }
+  .rodalogo{
+    width: 16vw;
+    }
+    .textoroda a:not(:last-child){
+      margin-left: 2vw;
+      }
+      
 }
