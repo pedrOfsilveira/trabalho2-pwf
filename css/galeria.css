@@ -25,3 +25,10 @@
     margin-bottom: 10px;
     object-fit: cover;
 }
+
+@media (max-width: 600px) {
+    .card {
+        margin: 0 0 20px 0;
+        width: 100%;
+    }
+}
