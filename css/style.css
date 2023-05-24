@@ -82,9 +82,6 @@ img {
 
 /* pagina principal */
 .conteudo {
-  /* display: flex;
-  flex-wrap: wrap;
-  */
   margin: 10px 70px 50px;
   text-align: left;
   font-family: 'Poppins', sans-serif;
@@ -179,7 +176,7 @@ input[type='checkbox'] {
 }
 
 .botao:checked + .lbl-botao + .fundo_botao {
-  max-height: 350px;
+  max-height: 380px;
 }
 
 .botao:checked + .lbl-botao {
@@ -219,13 +216,17 @@ footer {
   min-width: 80px;
 }
 .textoroda{
-  margin: 0.5vw 0;
+  margin: 0.3vw 0;
   font-size: 0.65rem;
   display: flex;
 
 }
 .copy{
   margin: 0.5vw 0;
+}
+.gmail{
+  margin: 0.5vw 0;
+  font-size: 0.6765rem;
 }
 .textoroda a:not(:last-child){
 margin-left: 0.5vw;
