@@ -88,6 +88,12 @@ img {
   font-size: 0.6rem;
 }
 
+iframe {
+  margin-top: 30px;
+  display: block;
+  margin: auto;
+}
+
 .conteudo p {
   margin-bottom: 15px;
 }
@@ -195,7 +201,6 @@ input[type='checkbox'] {
 .conteudo-interior p {
   margin-bottom: 0;
 }
-
 footer {
   grid-area: footer;
   background-color: #f58845;
@@ -232,13 +237,11 @@ footer {
 margin-left: 0.5vw;
 }
 
-
 .icones {
   width: 2vw;
   margin-left: 0.2vw;
   min-width: 20px;
 }
-
 
 .icons{
   display: flex;
@@ -341,4 +344,9 @@ margin-left: 0.5vw;
     width: 100%;
     margin-bottom: 10px;
   }   
+
+  .fundo_botao .conteudo_interior {
+    padding: 0.5rem .5rem;
+    font-size: 0.65rem;
+  }
 }
