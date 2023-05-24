@@ -1,0 +1,45 @@
+@import "style.css";
+
+
+.intro {
+  padding: 10px;
+  margin-top: 12px;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: 
+    'texto foto';
+  justify-items: center;
+  border: 3px solid #f7b78f;
+  border-radius: 5px;
+}
+
+.intro:hover {
+  background-color: #F7CEB5;
+}
+
+.thumb_r {
+  background-color: unset;
+  grid-area: foto;
+
+
+}
+
+#texto {
+  grid-area: texto;
+}
+
+@media (max-width: 600px) {
+  .intro {
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas: 
+    'foto'
+    'texto';
+  justify-items: center;
+  border: 3px solid #f7b78f;
+  border-radius: 5px;
+}
+
+
+}

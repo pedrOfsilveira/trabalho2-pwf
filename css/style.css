@@ -82,8 +82,9 @@ img {
 
 /* pagina principal */
 .conteudo {
-  display: flex;
+  /* display: flex;
   flex-wrap: wrap;
+  */
   margin: 10px 70px 50px;
   text-align: left;
   font-family: 'Poppins', sans-serif;
@@ -197,6 +198,7 @@ input[type='checkbox'] {
 .conteudo-interior p {
   margin-bottom: 0;
 }
+
 footer {
   grid-area: footer;
   background-color: #f58845;
@@ -213,8 +215,8 @@ footer {
   background-color:#f58845 ;
 }
 .rodalogo{
-width: 8vw;
-min-width: 80px;
+  width: 8vw;
+  min-width: 80px;
 }
 .textoroda{
   margin: 0.5vw 0;
