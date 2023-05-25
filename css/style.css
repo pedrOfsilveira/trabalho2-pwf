@@ -201,7 +201,7 @@ input[type='checkbox'] {
 
 .conteudo_interior p {
   margin-bottom: 0;
-  border-bottom: 3px solid #f7b78f;
+  border-bottom: 1.5px solid #f7b78f;
   transition: all .5s;
 }
 
