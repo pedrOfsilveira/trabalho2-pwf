@@ -18,6 +18,9 @@
     text-align: center;
 }
 
+.card:hover {
+        background-color: #F7CEB5;  
+}
 .card img {
     border-radius: 5px;
     width: 100%;

@@ -1,0 +1,143 @@
+@import "style.css";
+
+h3{
+    margin-top:30px;
+}
+
+.link {
+    text-decoration: underline;
+}
+
+.formulario fieldset {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(6, auto) minmax(300px,4fr) auto;
+    grid-template-areas: 
+        'label-nome input-nome'
+        'label-email input-email'
+        'label-data input-data'
+        'label-telefone input-telefone'
+        'label-assunto input-assunto'
+        'label-imagem input-imagem'
+        'label-mensagem input-mensagem'
+        'enviar enviar';
+    border: 3px solid #f7b78f;
+    padding: 10px;
+    align-items: center;
+}
+
+input, select{
+    margin-top: 6px;
+    border: unset;
+    padding: 0.5rem;
+    font-family: inherit;
+    background-color: #f7b78f;
+    font-weight: bold;
+    color: #5d3b27;
+}
+textarea{
+    margin-top: 6px;
+    border: unset;
+    align-self: auto;
+    height: 10rem;
+    font-family: inherit;
+    background-color: #f7b78f;
+    padding: 5px;
+    color: #5d3b27;
+}
+
+fieldset label {
+    margin-left: 5px;
+    color: unset;
+}
+label[for='nome1'] {
+    grid-area: label-nome;
+}
+#nome1 {
+    grid-area: input-nome;
+}
+label[for='email1'] {
+    grid-area: label-email;
+}
+#email1 {
+    grid-area: input-email;
+}
+label[for='dnasc1'] {
+    grid-area: label-data;
+}
+#dnasc1 {
+    grid-area: input-data;
+}
+label[for='tel1'] {
+    grid-area: label-telefone;
+}
+#tel1 {
+    grid-area: input-telefone;
+}
+label[for='assunto1'] {
+    grid-area: label-assunto;
+}
+#assunto1 {
+    grid-area: input-assunto;
+}
+label[for='imagem1'] {
+    grid-area: label-imagem;
+    color: white;
+}
+#imagem1 {
+    grid-area: input-imagem;
+}
+input[type=file]::file-selector-button {
+    background-color: #fce7d4;
+    border: none;
+    font-family: inherit;
+    background: #c26c37;
+    margin-right: 0.5rem;
+    color: white;
+    padding: 0.1rem 0.5rem 0.1rem 0.5rem;
+    transition: all .5s;
+}
+
+input[type=file]::file-selector-button:hover {
+    color: #f7b78f;
+    padding: 0.3rem 0.6rem 0.3rem 0.5rem;
+
+}
+label[for='mensagem1'] {
+    grid-area: label-mensagem;
+}
+#mensagem1 {
+    grid-area: input-mensagem;
+}
+#enviar1 {
+    grid-area: enviar;
+    color: white;
+    transition: all .5s;
+}
+#enviar1:hover {
+    color: #f7b78f;
+}
+
+@media (max-width: 600px) {
+    .formulario fieldset {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(13, auto) minmax(300px, 4fr) auto;
+    grid-template-areas: 
+        'label-nome' 
+        'input-nome'
+        'label-email'
+        'input-email'
+        'label-data'
+        'input-data'
+        'label-telefone'
+        'input-telefone'
+        'label-assunto'
+        'input-assunto'
+        'label-imagem' 
+        'input-imagem'
+        'label-mensagem' 
+        'input-mensagem'
+        'enviar';
+    }  
+}
