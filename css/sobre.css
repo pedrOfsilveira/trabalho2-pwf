@@ -1,8 +1,7 @@
 @import "style.css";
 
-
 .intro {
-  padding: 10px;
+  padding: 1rem;
   margin-top: 12px;
   display: grid;
   grid-template-columns: 4fr 1fr;
@@ -27,8 +26,12 @@
 
 #texto {
   grid-area: texto;
-}
+} 
 
+.icons {
+  justify-content:flex-start;
+  align-items: center;
+}
 @media (max-width: 600px) {
   .intro {
   grid-template-columns: 1fr;
