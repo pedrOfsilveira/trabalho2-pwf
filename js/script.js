@@ -1,7 +1,7 @@
 function addstuff() {
   $('.wrapper').append('<header><a href="index.html"><img class="logo" alt="logo do site Wikiposa" src="img/logo.png"></a><a class="sobre" href="sobre.html"><p>sobre nós</p></a></header>');
 
-  $('.wrapper').append('<footer><div class="footer_centro"><img class="rodalogo" src="img/logo.png" alt="logo rodapé"><div class="textoroda"><a href="index.html">Principal</a> <a href="sobre.html">Sobre nós</a> <br></div><p class="copy">©WIKIPOSA</p><div class="icons"> <img class="icones" src="img/youtube.png" alt="youtube"><img class="icones" src="img/twitter.png" alt="twitter"> <img class="icones" src="img/facebook.png" alt="face"><img class="icones" src="img/instagram.png" alt="insta"> </div></div></footer>');
+  $('.wrapper').append('<footer><div class="footer_centro"><a href="index.html"><img class="rodalogo" src="img/logo.png" alt="logo rodapé"></a><div class="textoroda"><a href="#">Início</a> <a href="sobre.html">Sobre nós</a> <br></div><p class="copy">© Wikiposa</p></div></footer>'); 
 
   $('<aside></aside>').appendTo('.wrapper');
  
