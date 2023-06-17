@@ -1,7 +1,7 @@
 <aside>
   <nav>
     <div class="botao" id="botao_raposa">
-      <a href="html/feneco.html">
+      <a href="feneco.php">
         <p> Raposa do Mês </p>
       </a>
     </div>
@@ -11,40 +11,40 @@
       <label for="especies" class="lbl-botao">espécies </label>
       <div class="fundo_botao">
         <div class="conteudo_interior">
-          <a href="html/feneco.html">
+          <a href="feneco.php">
             <p> zerda </p>
           </a>
-          <a href="html/veloz.html">
+          <a href="veloz.php">
             <p> velox </p>
           </a>
-          <a href="html/vermelha.html">
+          <a href="vermelha.php">
             <p> vulpes </p>
           </a>
-          <a href="html/artico.html">
+          <a href="artico.php">
             <p> lagopus </p>
           </a>
-          <a href="html/afega.html">
+          <a href="afega.php">
             <p> cana </p>
           </a>
-          <a href="html/ana.html">
+          <a href="ana.php">
             <p> macrotis </p>
           </a>
-          <a href="html/himalaia.html">
+          <a href="himalaia.php">
             <p> ferrilata </p>
           </a>
-          <a href="html/estepes.html">
+          <a href="estepes.php">
             <p> corsac </p>
           </a>
-          <a href="html/cabo.html">
+          <a href="cabo.php">
             <p> chama </p>
           </a>
-          <a href="html/bengala.html">
+          <a href="bengala.php">
             <p> bengalensis </p>
           </a>
-          <a href="html/ruppell.html">
+          <a href="ruppell.php">
             <p> rueppellii </p>
           </a>
-          <a href="html/palida.html">
+          <a href="palida.php">
             <p> pallida </p>
           </a>
         </div>
@@ -55,22 +55,22 @@
       <label for="artigos" class="lbl-botao">artigos </label>
       <div class="fundo_botao">
         <div class="conteudo_interior">
-          <a href="html/mitologias.html">
+          <a href="mitologias.php">
             <p> Raposas na mitologia </p>
           </a>
-          <a href="html/domesticas.html">
+          <a href="domesticas.php">
             <p> Raposas domésticas </p>
           </a>
         </div>
       </div>
     </div>
     <div class="botao" id="botao_faq">
-      <a href="html/faq.html">
+      <a href="faq.php">
         <p> faq </p>
       </a>
     </div>
     <div class="botao" id="botao_galeria">
-      <a href="html/galeria.html">
+      <a href="galeria.php">
         <p> galeria </p>
       </a>
     </div>

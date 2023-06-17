@@ -7,21 +7,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="css/form.css" rel="stylesheet">
   <title>Wikiposa</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-  <script src="js/script.js"></script>
+
 </head>
+
 <body>
   <div class="wrapper">
+    <?php include 'header.php'; ?>
+    <?php include 'sidebar.php'; ?>
+    <?php include 'footer.php'; ?>
     <main>
       <div class="conteudo">
         <h1>Formulário de contato</h1>
         <form class="formulario" id="formulario1">
           <fieldset>
-            
+
             <label for="nome1">Nome:</label>
-            <input type="text" id="nome1" name="nome"> 
+            <input type="text" id="nome1" name="nome">
             <label for="email1">E-mail:</label>
-            <input type="email" id="email1" name="email"> 
+            <input type="email" id="email1" name="email">
             <label for="dnasc1">Data de nascimento: </label>
             <input type="date" id="dnasc1" name="dnasc">
             <label for="tel1">Telefone:</label>
@@ -35,12 +38,13 @@
             </select>
             <label for="imagens1">Envie sua imagem</label>
             <input type="file" name="imagens" id="imagens1">
-            <label  for="mensagem1">Escreva sua mensagem:</label>
+            <label for="mensagem1">Escreva sua mensagem:</label>
             <textarea name="mensagem" id="mensagem1" form="formulario1"></textarea>
             <input class="botao" type="submit" name="enviar" id="enviar1">
-        </fieldset>
+          </fieldset>
         </form>
       </div>
     </main>
   </div>
 </body>
+</html>

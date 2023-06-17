@@ -7,12 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/artigos.css" rel="stylesheet">
     <title>Wikiposa</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="js/script.js"></script>
 </head>
 
 <body>
     <div class="wrapper">
+        <?php include 'header.php'; ?>
+        <?php include 'sidebar.php'; ?>
+        <?php include 'footer.php'; ?>
         <main>
             <div class="conteudo">
                 <h1>Perguntas frequentes</h1>
@@ -32,7 +33,7 @@
                     <li>
                         <h3>Como posso contribuir com informações ou fotos de raposas para o site?</h3>
                         <p>Adoramos receber contribuições da comunidade de amantes de raposas! Se você tem informações
-                        interessantes ou fotos desse animal, por favor, envie-nos através do nosso <a class="link" href="formulario.html">formulário de contato</a>. Ficaremos felizes em compartilhar seu conhecimento e mostrar ao mundo suas incríveis
+                        interessantes ou fotos desse animal, por favor, envie-nos através do nosso <a class="link" href="formulario.php">formulário de contato</a>. Ficaremos felizes em compartilhar seu conhecimento e mostrar ao mundo suas incríveis
                         fotografias!</p>
                     </li>
                     <li>
@@ -49,7 +50,7 @@
                             sugestões para o site?</h3>
                                             <p>Com certeza! Adoramos ouvir nossos visitantes e estamos sempre disponíveis para responder suas
                     perguntas ou ouvir suas sugestões. Fique à vontade para entrar em contato conosco através do
-                    <a class="link" href="formulario.html">formulário de contato</a>. Será um prazer ajudar e receber suas ideias para
+                    <a class="link" href="formulario.php">formulário de contato</a>. Será um prazer ajudar e receber suas ideias para
                     tornar nosso site ainda melhor.
                     </p>
                     </li>

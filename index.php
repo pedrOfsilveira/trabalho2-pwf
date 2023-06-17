@@ -7,13 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="css/style.css" rel="stylesheet">
   <title>Wikiposa</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-  <script src="js/script.js"></script>
 </head>
 
 <body>
-  <div class="wrapper">
-
+  <div class="wrapper">   
+    <?php include 'header.php'; ?>
+    <?php include 'sidebar.php'; ?>
+    <?php include 'footer.php'; ?>
     <main>
       <div class="conteudo">
         <img class="fenecos_main" alt="três" src="img/fenecos.jpg">
